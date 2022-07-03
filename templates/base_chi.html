@@ -29,7 +29,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">關於我們</a></li>
                             <li><a href="#">Our Goal</a></li>
                             <li tabindex="0">
                                 <a class="justify-between">
@@ -46,9 +46,9 @@
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal p-0">
-                        <li ><a href="#">About Us</a></li>
-                        <li><a href="#">Our Goal</a></li>
-                        <li tabindex="0">
+                        <li class="pr-1"><a href="#">About Us</a></li>
+                        <li class="px-1"><a href="#">Our Goal</a></li>
+                        <li class="pl-1" tabindex="0">
                             <a>
                                 Our Projects
                                 <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
@@ -60,6 +60,13 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
+                    <div class="dropdown dropdown-end pr-3">
+                        <label tabindex="0" class="btn btn-ghost rounded-btn text-2xl"><i class="bi bi-translate"></i></label>
+                        <ul tabindex="0" class="menu dropdown-content p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+                            <li><a href="/home/eng">English</a></li> 
+                            <li><a href="/home/chi">中文</a></li>
+                        </ul>
+                    </div>
                     <a class="btn btn-primary">Donate</a>
                 </div>
             </div>
@@ -89,4 +96,6 @@
         </div>
     </div>
 </body>
+{% block script %}
+{% endblock %}
 </html>
