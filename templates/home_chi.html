@@ -1,0 +1,39 @@
+{% extends 'base_chi.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+<div class="flex flex-col">
+    <div class="hero h-9/12 mt-32 mx-20 bg-base/30 rounded-box shadow-md backdrop-blur-md backdrop-brightness-95">
+        <div class="hero-content flex-col lg:flex-row">
+            <img src="https://placeimg.com/260/400/arch" class="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+            <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-green-700 to-violet-700 text-4xl sm:text-5xl font-bold">簡潔，方便，高效</h1>
+            <p class="py-6 first-line:uppercase first-line:tracking-wider first-letter:text-4xl first-letter:font-bold">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="btn bg-primary">關於我們</button>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row justify-center pt-20">
+        <div class="card w-96 bg-stone-400 glass shadow-xl mr-4">
+            <div class="card-body">
+                <h2 class="card-title">簡潔</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+        </div>
+        <div class="card w-96 bg-primary text-primary-content glass shadow-xl mr-4">
+            <div class="card-body">
+                <h2 class="card-title">方便</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+        </div>
+        <div class="card w-96 glass bg-neutral text-neutral-content shadow-xl mr-4">
+            <div class="card-body">
+                <h2 class="card-title">高效</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

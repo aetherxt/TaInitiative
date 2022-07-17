@@ -14,3 +14,12 @@ def home_eng():
 @app.route("/home/chi")
 def home_chi():
     return render_template("home_chi.html")
+
+@app.route("/aboutus")
+@app.route("/aboutus/eng")
+def aboutus_eng():
+    return render_template("aboutus_eng.html")
+
+@app.route("/aboutus/chi")
+def aboutus_chi():
+    return render_template("aboutus_chi.html")
